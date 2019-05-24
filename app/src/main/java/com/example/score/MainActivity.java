@@ -36,7 +36,7 @@ public class MainActivity extends AppCompatActivity {
         int programming = Integer.parseInt(etPrograming.getText().toString());
         int dataStructure = Integer.parseInt(etDataStructure.getText().toString());
         int algorithm = Integer.parseInt(etAlgorithm.getText().toString());
-        Intent intent=new Intent(this,ResuitActivitity.class);
+        Intent intent=new Intent(this, ResultActivitity.class);
         Bundle bundle=new Bundle();
         bundle.putInt("programming",programming);
         bundle.putInt("dataStructure",dataStructure);
