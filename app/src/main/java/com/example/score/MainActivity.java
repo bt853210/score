@@ -1,7 +1,9 @@
 package com.example.score;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.EditText;
 
 public class MainActivity extends AppCompatActivity {
@@ -25,5 +27,21 @@ public class MainActivity extends AppCompatActivity {
             return false;
         }
         else return true;
+    }
+    public void onSubmiClick(View view){
+        boolean isValid = isValid(etPrograming)&isValid(etDataStructure)&isValid(etAlgorithm);
+        if(!isValid){
+            return;
+        }
+        int programming = Integer.parseInt(etPrograming.getText().toString());
+        int dataStructure = Integer.parseInt(etDataStructure.getText().toString());
+        int algorithm = Integer.parseInt(etAlgorithm.getText().toString());
+        Intent intent=new Intent(this,ResuitActivitity.class);
+        Bundle bundle=new Bundle();
+        bundle.putInt("programming",programming);
+        bundle.putInt("dataStructure",dataStructure);
+        bundle.putInt("algorithm",algorithm);
+        intent.putExtras(bundle);
+        startActivity(intent);
     }
 }
