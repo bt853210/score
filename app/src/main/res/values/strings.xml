@@ -1,3 +1,5 @@
 <resources>
     <string name="app_name">score</string>
+    <string name="tvResultTitle">Result</string>
+    <string name="btBack">BACK</string>
 </resources>
