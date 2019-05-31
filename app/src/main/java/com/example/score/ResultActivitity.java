@@ -44,7 +44,7 @@ public class ResultActivitity extends AppCompatActivity {
             title="Pass";
             pic=R.drawable.circle;
         }
-        if(average==40){
+        else if(average>=40){
             message="100";
             title="failed";
             pic=R.drawable.tan;
