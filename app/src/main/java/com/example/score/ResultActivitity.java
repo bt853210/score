@@ -52,7 +52,7 @@ public class ResultActivitity extends AppCompatActivity {
         else {
             message="0";
             title="failed";
-            pic=R.drawable.X;
+            pic=R.drawable.fail;
         }
         AlertDialog.Builder builder=new AlertDialog.Builder(this);
         builder.setMessage(message);

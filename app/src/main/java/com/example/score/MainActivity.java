@@ -26,9 +26,9 @@ public class MainActivity extends AppCompatActivity {
             editText.setError("0~100");
             return false;
         }
-        else return true;
+        else {return true;}
     }
-    public void onSubmiClick(View view){
+    public void onSubmitClick(View view){
         boolean isValid = isValid(etPrograming)&isValid(etDataStructure)&isValid(etAlgorithm);
         if(!isValid){
             return;
