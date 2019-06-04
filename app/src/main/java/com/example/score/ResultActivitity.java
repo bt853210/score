@@ -59,6 +59,9 @@ public class ResultActivitity extends AppCompatActivity {
         builder.setTitle(title);
         builder.setIcon(pic);
         builder.show();
+        builder.setPositiveButton("OK",null);
+        builder.setNegativeButton("Cancel",null);
+        builder.setNeutralButton("Nothing",null);
     }
 
     public void onBackClick(View view){finish();}
